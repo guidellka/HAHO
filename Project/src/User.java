@@ -2,6 +2,9 @@ public class User {
     private String name;
     private  String surname;
     private long stdId;
+    private String faculty;
+    private String email;
+    
     private boolean statusBooking = false;
 
     public User() {
@@ -13,7 +16,9 @@ public class User {
         this.surname = surname;
         this.stdId = stdId;
     }
-
+    
+    /*----- get/set  อยู่ข้างล่างนะ-------*/
+    
     public String getName() {
         return name;
     }
@@ -38,7 +43,7 @@ public class User {
         this.stdId = stdId;
     }
 
-    public boolean isStatusBooking() {
+    public boolean getStatusBooking() {
         return statusBooking;
     }
 
@@ -46,10 +51,28 @@ public class User {
         this.statusBooking = statusBooking;
     }
 
+    public String getFaculty() {
+        return faculty;
+    }
+
+    public void setFaculty(String faculty) {
+        this.faculty = faculty;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    
+    /*----- End get/set -------*/
+    
     @Override
     public String toString() {
-        return  "Name:" + name + " " + surname +
-                "\nStudent ID: " + stdId +
+        return  "\nStudent ID: " + stdId +
+                "\nName:" + name + " " + surname +
                 "\nStatus booking:" + (statusBooking==true?"Reservations":"No reservation") ;
     }
     
