@@ -34,7 +34,9 @@ public class Place {
         this.detailBooking = null;
         user = temp;
     }
-
+    
+    /*----- get/set  อยู่ข้างล่างนะ-------*/
+    
     public String getNamePlace() {
         return namePlace;
     }
@@ -59,8 +61,15 @@ public class Place {
         this.detailBooking = detailBooking;
     }
     
+    /*----- End get/set -------*/
+
+    @Override
+    public String toString() {
+        return "Place";
+        //เดะค่อยมาเขียนนะ ^-^'
+    }
     
-  
+   
     
     
 }
