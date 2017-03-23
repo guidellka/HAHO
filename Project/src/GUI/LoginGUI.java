@@ -36,13 +36,13 @@ public class LoginGUI extends javax.swing.JFrame {
         passwordText.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         passwordText.setText("Password    :");
         getContentPane().add(passwordText);
-        passwordText.setBounds(210, 270, 67, 40);
+        passwordText.setBounds(210, 270, 73, 40);
 
         userText.setFont(new java.awt.Font("Gadugi", 1, 12)); // NOI18N
         userText.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         userText.setText("Username  :");
         getContentPane().add(userText);
-        userText.setBounds(210, 220, 66, 40);
+        userText.setBounds(210, 220, 68, 40);
 
         usernameField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
