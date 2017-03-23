@@ -1,5 +1,5 @@
 
-package GUI;
+package booking.GUI;
 
 import java.awt.Color;
 

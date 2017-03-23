@@ -1,5 +1,5 @@
 
-package GUI;
+package booking.GUI;
 
 public class AddPlace extends javax.swing.JFrame {
 
