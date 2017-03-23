@@ -25,8 +25,9 @@ public class DB {
             System.out.println("Driver loaded and registered");
             
             String url ="jdbc:mysql://"+hostName+"/"+db_Name;
-            
+            //String url = "jdbc:mysql://"+hostName+":3306/"+db_Name+"?user="+user+"&password="+password;
             Connection conn = DriverManager.getConnection(url,user,password);
+            //Connection conn = DriverManager.getConnection(url);
             System.out.println("MySQL Connection created\n");
             
         }
