@@ -35,11 +35,9 @@ public class PlaceList extends javax.swing.JFrame {
         number = new javax.swing.JLabel();
         dateText = new javax.swing.JLabel();
         date = new javax.swing.JLabel();
-        back = new javax.swing.JToggleButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("List Place");
-        setPreferredSize(new java.awt.Dimension(800, 600));
         setResizable(false);
 
         jTable1.setFont(new java.awt.Font("TH Sarabun New", 0, 18)); // NOI18N
@@ -73,9 +71,6 @@ public class PlaceList extends javax.swing.JFrame {
         date.setFont(new java.awt.Font("TH Sarabun New", 0, 24)); // NOI18N
         date.setText("00/00/00  00:00");
 
-        back.setFont(new java.awt.Font("TH Sarabun New", 0, 24)); // NOI18N
-        back.setText("< ย้อนกลับ");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -83,9 +78,6 @@ public class PlaceList extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(37, 37, 37)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(back, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 726, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(37, Short.MAX_VALUE))
@@ -117,10 +109,8 @@ public class PlaceList extends javax.swing.JFrame {
                         .addComponent(placeNo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(number, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(back, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(49, 49, 49))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(31, 31, 31))
         );
 
         pack();
@@ -165,7 +155,6 @@ public class PlaceList extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JToggleButton back;
     private javax.swing.JLabel date;
     private javax.swing.JLabel dateText;
     private javax.swing.JScrollPane jScrollPane1;
