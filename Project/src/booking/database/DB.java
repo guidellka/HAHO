@@ -13,7 +13,7 @@ import java.sql.Statement;
 
 
 public class DB {
-   static String hostName ="haho.sit.kmutt.ac.th";
+   static String hostName ="10.4.56.12";
    static String user = "haho";
    static String password = "hahoapp";
    static String db_Name = "hahoapplication";
