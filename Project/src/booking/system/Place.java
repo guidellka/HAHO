@@ -1,7 +1,7 @@
 package booking.system;
 
-
-import java.util.*;
+import java.sql.*;
+import java.util.Date;
 
 public class Place {
     private String namePlace;
@@ -9,7 +9,7 @@ public class Place {
     private User user; // ยังไม่มี get set
     private String detailBooking;
     private Date date; //งงอยู่ 5555555 (ยังไม่มี get set)
-
+    
     public Place() {
     }
 
@@ -36,7 +36,25 @@ public class Place {
         this.detailBooking = null;
         user = temp;
     }
-    
+    public void seeUserStatus() throws ClassNotFoundException, SQLException{ //ยังไม่เสร็จเหลือแก้ว่าจะรับค่าตรง USerID มา
+        try{
+        Class.forName("com.mysql.jdbc.Driver");
+        Connection conn = DriverManager.getConnection("jdbc:mysql:10.4.56.12/hahoapplication","haho","hahoapp");
+        Statement st = conn.createStatement();
+        String word = "SELECT PlaceID * FROM BBooking WHERE UserID = ";
+        ResultSet re = st.executeQuery(word);
+        Statement st2 = conn.createStatement();
+        String word2 = "SELECT * FROM Bplace WHERE re";
+        ResultSet re2 = st2.executeQuery(word2);
+        while (re2.next())
+                System.out.println("Place ID :"+"PlaceID"+"\n"+
+                                   "Place Name : "+"PlaceName"+"\n"+
+                                   "Place Detail : "+"PlaceDetail"+"\n");
+        
+        }
+        catch (ClassNotFoundException | SQLException e) {
+        }
+    }
     /*----- get/set  อยู่ข้างล่างนะ-------*/
     
     public String getNamePlace() {
