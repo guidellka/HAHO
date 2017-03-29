@@ -36,34 +36,25 @@ public class LoginGUI extends javax.swing.JFrame {
         passwordText.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         passwordText.setText("Password    :");
         getContentPane().add(passwordText);
-        passwordText.setBounds(210, 270, 73, 40);
+        passwordText.setBounds(210, 270, 67, 40);
 
         userText.setFont(new java.awt.Font("Gadugi", 1, 12)); // NOI18N
         userText.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         userText.setText("Username  :");
         getContentPane().add(userText);
-        userText.setBounds(210, 220, 68, 40);
-
-        usernameField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                usernameFieldActionPerformed(evt);
-            }
-        });
+        userText.setBounds(210, 220, 66, 40);
         getContentPane().add(usernameField);
         usernameField.setBounds(290, 230, 190, 29);
 
         login.setFont(new java.awt.Font("Gadugi", 1, 16)); // NOI18N
         login.setText("Login");
-        login.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                loginActionPerformed(evt);
-            }
-        });
         getContentPane().add(login);
         login.setBounds(500, 230, 82, 82);
 
         regis.setFont(new java.awt.Font("Gadugi", 1, 12)); // NOI18N
         regis.setText("Register");
+        regis.setOpaque(false);
+        regis.setPreferredSize(new java.awt.Dimension(800, 600));
         regis.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 regisActionPerformed(evt);
@@ -73,11 +64,6 @@ public class LoginGUI extends javax.swing.JFrame {
         regis.setBounds(230, 330, 140, 31);
 
         PasswordField.setText("jPasswordField1");
-        PasswordField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                PasswordFieldActionPerformed(evt);
-            }
-        });
         getContentPane().add(PasswordField);
         PasswordField.setBounds(290, 280, 190, 30);
 
@@ -95,26 +81,16 @@ public class LoginGUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void usernameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usernameFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_usernameFieldActionPerformed
-
-    private void loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_loginActionPerformed
-
     private void regisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regisActionPerformed
-        // TODO add your handling code here:
+        Register regis = new Register();
+        regis.setVisible(true);
+        setVisible(false);
     }//GEN-LAST:event_regisActionPerformed
 
-    private void PasswordFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PasswordFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_PasswordFieldActionPerformed
-
     private void forgetPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_forgetPasswordActionPerformed
-//        ForgetPassword form2 = new ForgetPassword(); 
-//        form2.setVisible(true);
-//        setVisible(false);
+        ForgetPassword fg = new ForgetPassword(); 
+        fg.setVisible(true);
+        setVisible(false);
     }//GEN-LAST:event_forgetPasswordActionPerformed
 
  
